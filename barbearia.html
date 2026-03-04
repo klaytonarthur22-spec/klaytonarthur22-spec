@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #111;
+    background: #0d0d0d;
     color: white;
     text-align: center;
 }
@@ -17,43 +17,90 @@ body {
 header {
     background: black;
     padding: 20px;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    color: #c59d5f;
 }
 
 h1 {
     margin-top: 40px;
+    font-size: 32px;
+}
+
+p {
+    color: #ccc;
 }
 
 .botao {
     display: inline-block;
-    margin: 20px;
-    padding: 15px 30px;
+    margin: 25px;
+    padding: 15px 35px;
     background-color: #c59d5f;
     color: black;
     font-weight: bold;
     text-decoration: none;
     border-radius: 30px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: scale(1.08);
 }
 
 .secao {
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .card {
     background: #1a1a1a;
     margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 400px;
+    padding: 25px;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 12px;
+    border: 1px solid #c59d5f;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.galeria img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
+    border: 2px solid #c59d5f;
 }
 
 footer {
     background: black;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 14px;
+    color: #777;
+}
+
+/* Botão flutuante */
+.whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 22px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.whatsapp-fixo:hover {
+    transform: scale(1.1);
 }
 </style>
 </head>
@@ -65,10 +112,11 @@ footer {
 </header>
 
 <h1>Estilo, Classe e Precisão</h1>
-<p>Os melhores cortes da cidade.</p>
+<p>Os melhores cortes da cidade com atendimento exclusivo.</p>
 
-<a href="https://wa.me/5531996184788?text=Ol%C3%A1,%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" class="botao">
-Agendar pelo WhatsApp
+<a href="https://wa.me/5531996184788?text=Ol%C3%A1,%20quero%20agendar%20um%20hor%C3%A1rio." 
+target="_blank" class="botao">
+Agendar Horário
 </a>
 
 <div class="secao">
@@ -80,7 +128,7 @@ Agendar pelo WhatsApp
 </div>
 
 <div class="card">
-<h3>Barba</h3>
+<h3>Barba Completa</h3>
 <p>R$30</p>
 </div>
 
@@ -92,13 +140,27 @@ Agendar pelo WhatsApp
 </div>
 
 <div class="secao">
+<h2>Galeria</h2>
+<div class="galeria">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="">
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="">
+<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1" alt="">
+</div>
+</div>
+
+<div class="secao">
 <h2>Sobre Nós</h2>
-<p>Mais de 5 anos trazendo estilo e confiança para nossos clientes.</p>
+<p>Mais de 5 anos trazendo estilo, confiança e qualidade para nossos clientes.</p>
 </div>
 
 <footer>
 © 2026 Barbearia Elite - Todos os direitos reservados
 </footer>
+
+<a href="https://wa.me/5531996184788?text=Ol%C3%A1,%20quero%20agendar%20um%20hor%C3%A1rio." 
+target="_blank" class="whatsapp-fixo">
+💬
+</a>
 
 </body>
 </html>
